@@ -1,0 +1,63 @@
+@import "./media-queries";
+
+.media__portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    background:rgba(255, 255, 255, 0.5);
+    background-size: 10%;
+    border-radius: 10%;
+    padding: 0rem;
+
+    @include celular{
+        margin: none;
+    }
+    
+        .media__portfolio__img{
+            border-radius: 10%;
+            width: 100%;
+            max-height: 100%;
+            height: auto;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+                       
+        }
+
+        .media__portfolio__text{
+            display: none;
+            color: black;
+            position: absolute;
+            text-align: center;
+            align-items: center;
+            font-family: 'Quicksand', sans-serif;
+                h3{
+                    font-size: 2rem;
+                }
+                h5{
+                    font-weight: 300;
+                    font-size: 2rem;
+                    width: 80%;
+                }
+        }
+}
+
+.media__portfolio:hover {
+    .media__portfolio__text{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .media__portfolio__img{
+        opacity: .2;
+    } 
+}
+
+#row-img{
+    display: grid;
+    @include tablet{
+        margin-top: auto;
+            }  
+    @include celular{
+        flex-flow: column;
+    }
+} 

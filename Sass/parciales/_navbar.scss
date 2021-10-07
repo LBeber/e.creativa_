@@ -1,0 +1,19 @@
+.nav{
+    .nav__li{
+        display: flex;
+        height: 10vh;
+        align-items: center;
+        width: auto;
+        text-align: center;
+        margin: 0rem 2rem;
+        .nav__li__a {
+            font-family: 'besley', serif;
+            font-size: 2rem;
+            align-self: center;
+        }
+    }
+}
+
+.navbar-brand{
+    width: 8vw;
+  }

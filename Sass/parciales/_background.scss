@@ -1,0 +1,36 @@
+@import "./media-queries";
+
+$height: 100vh;
+$widht: 100%;
+
+
+
+@each $fondo in home, servicios, portfolio, nosotros, contacto, error404{
+  .#{$fondo} { 
+      background-image:  linear-gradient(rgba(255, 255, 255, 1), rgba(44, 36, 36, 0.5)), url('../media/#{$fondo}.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: $height;
+      display: flex;
+      width: $widht;
+        };
+  
+      .bg__title{
+          font-family: 'Quicksand', sans-serif;
+          font-weight: 500;
+          font-size: 4rem;
+          align-self: center;
+        }
+      
+        p{
+          font-family: 'Quicksand', sans-serif;
+          font-weight: 200;
+          font-size: 2rem;
+        }
+        .p-nos{
+          @include tablet{
+            width: 70%;
+          }
+        }
+  }
