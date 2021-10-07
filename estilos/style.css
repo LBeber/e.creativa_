@@ -1,12 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500&display=swap");
 .home, .error404 {
   background-image: linear-gradient(white, rgba(44, 36, 36, 0.5)), url("../media/home.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  justify-content: center;
+  align-items: stretch; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
@@ -28,9 +30,11 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  justify-content: center;
+  align-items: stretch; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
@@ -52,9 +56,11 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  justify-content: center;
+  align-items: stretch; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
@@ -76,9 +82,11 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  justify-content: center;
+  align-items: stretch; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
@@ -100,9 +108,11 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  justify-content: center;
+  align-items: stretch; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
@@ -124,9 +134,11 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  justify-content: center;
+  align-items: stretch; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
@@ -152,12 +164,12 @@ html {
   align-items: center; }
   .home h1, .error404 h1 {
     font-family: 'besley', serif;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: 0%;
     font-size: 13rem; }
     @media screen and (max-width: 768px) {
       .home h1, .error404 h1 {
-        font-size: 6rem; } }
+        font-size: 8rem; } }
     @media screen and (max-width: 476px) {
       .home h1, .error404 h1 {
         font-size: 4rem; } }
@@ -180,6 +192,26 @@ html {
 
 .error404 h3 {
   font-size: 2rem; }
+
+.efect_title h1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%; }
+
+.efect_title h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #000000; }
+
+.efect_title h1:nth-child(2) {
+  color: #000000;
+  animation: animate 4s ease-in-out infinite; }
+
+@keyframes animate {
+  0%, 100% {
+    clip-path: polygon(0% 61%, 14% 50%, 35% 58%, 55% 59%, 77% 52%, 89% 57%, 100% 64%, 100% 100%, 0% 100%); }
+  50% {
+    clip-path: polygon(0% 61%, 18% 66%, 35% 56%, 51% 49%, 75% 64%, 87% 68%, 100% 59%, 100% 100%, 0% 100%); } }
 
 .serv__media {
   display: flex;

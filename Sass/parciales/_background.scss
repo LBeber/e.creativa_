@@ -11,9 +11,11 @@ $widht: 100%;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      height: $height;
+      min-height: 100vh;
       display: flex;
       width: $widht;
+      justify-content: center;
+      align-items:stretch;
         };
   
       .bg__title{
