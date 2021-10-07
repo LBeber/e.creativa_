@@ -1,14 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500&display=swap");
+body {
+  background-color: black; }
+
 .home, .error404 {
-  background-image: linear-gradient(white, rgba(44, 36, 36, 0.5)), url("../media/home.jpg");
-  background-repeat: no-repeat;
+  background-color: wheat;
+  background-repeat: repeat;
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: stretch; }
+  justify-content: center; }
+
+.home:nth-child(1), .error404:nth-child(1) {
+  background-color: yellow;
+  animation: animate 4s ease-in-out infinite; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
@@ -26,15 +33,19 @@ p {
     width: 70%; } }
 
 .servicios {
-  background-image: linear-gradient(white, rgba(44, 36, 36, 0.5)), url("../media/servicios.jpg");
-  background-repeat: no-repeat;
+  background-color: wheat;
+  background-repeat: repeat;
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: stretch; }
+  justify-content: center; }
+
+.servicios:nth-child(1) {
+  background-color: yellow;
+  animation: animate 4s ease-in-out infinite; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
@@ -52,15 +63,19 @@ p {
     width: 70%; } }
 
 .portfolio {
-  background-image: linear-gradient(white, rgba(44, 36, 36, 0.5)), url("../media/portfolio.jpg");
-  background-repeat: no-repeat;
+  background-color: wheat;
+  background-repeat: repeat;
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: stretch; }
+  justify-content: center; }
+
+.portfolio:nth-child(1) {
+  background-color: yellow;
+  animation: animate 4s ease-in-out infinite; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
@@ -78,15 +93,19 @@ p {
     width: 70%; } }
 
 .nosotros {
-  background-image: linear-gradient(white, rgba(44, 36, 36, 0.5)), url("../media/nosotros.jpg");
-  background-repeat: no-repeat;
+  background-color: wheat;
+  background-repeat: repeat;
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: stretch; }
+  justify-content: center; }
+
+.nosotros:nth-child(1) {
+  background-color: yellow;
+  animation: animate 4s ease-in-out infinite; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
@@ -104,15 +123,19 @@ p {
     width: 70%; } }
 
 .contacto {
-  background-image: linear-gradient(white, rgba(44, 36, 36, 0.5)), url("../media/contacto.jpg");
-  background-repeat: no-repeat;
+  background-color: wheat;
+  background-repeat: repeat;
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: stretch; }
+  justify-content: center; }
+
+.contacto:nth-child(1) {
+  background-color: yellow;
+  animation: animate 4s ease-in-out infinite; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
@@ -130,15 +153,19 @@ p {
     width: 70%; } }
 
 .error404 {
-  background-image: linear-gradient(white, rgba(44, 36, 36, 0.5)), url("../media/error404.jpg");
-  background-repeat: no-repeat;
+  background-color: wheat;
+  background-repeat: repeat;
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: stretch; }
+  justify-content: center; }
+
+.error404:nth-child(1) {
+  background-color: yellow;
+  animation: animate 4s ease-in-out infinite; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
@@ -154,6 +181,14 @@ p {
 @media screen and (max-width: 768px) {
   .p-nos {
     width: 70%; } }
+
+@keyframes animate {
+  0%, 100% {
+    clip-path: polygon(0% 61%, 14% 50%, 35% 58%, 55% 59%, 77% 52%, 89% 57%, 100% 64%, 100% 100%, 0% 100%);
+    color: #2b0404; }
+  50% {
+    clip-path: polygon(0% 61%, 18% 66%, 35% 56%, 51% 49%, 75% 64%, 87% 68%, 100% 59%, 100% 100%, 0% 100%);
+    color: #2b0404; } }
 
 html {
   font-size: 62.5%;
@@ -193,26 +228,43 @@ html {
 .error404 h3 {
   font-size: 2rem; }
 
-.efect_title h1 {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%; }
-
-.efect_title h1:nth-child(1) {
-  color: transparent;
-  -webkit-text-stroke: 2px #000000; }
-
-.efect_title h1:nth-child(2) {
-  color: #000000;
-  animation: animate 4s ease-in-out infinite; }
+/* .efect_title{
+@include desktop{
+    h1{
+       position: absolute;
+       transform: translate(-50%, -50%);
+       left: 50%;
+       top: 50%;
+    }
+    h1:nth-child(1){  
+         color: transparent;
+         -webkit-text-stroke: 1.5px #000000;
+    }
+    h1:nth-child(2){ 
+        
+        
+    }
+    }
+}
+ */
+/* .home{
+    animation: animate 4s ease-in-out infinite;
+} */
+/* body{
+    background-color:transparent;
+}
 
 @keyframes animate {
-  0%, 100% {
-    clip-path: polygon(0% 61%, 14% 50%, 35% 58%, 55% 59%, 77% 52%, 89% 57%, 100% 64%, 100% 100%, 0% 100%); }
-  50% {
-    clip-path: polygon(0% 61%, 18% 66%, 35% 56%, 51% 49%, 75% 64%, 87% 68%, 100% 59%, 100% 100%, 0% 100%); } }
-
+    0%,100%{
+        clip-path: polygon(0% 61%, 14% 50%, 35% 58%, 55% 59%, 77% 52%, 89% 57%, 100% 64%, 100% 100%, 0% 100%);
+        color: #2b0404;     
+    }
+    50%{
+        clip-path: polygon(0% 61%, 18% 66%, 35% 56%, 51% 49%, 75% 64%, 87% 68%, 100% 59%, 100% 100%, 0% 100%);
+        color: #2b0404; 
+   
+    }
+} */
 .serv__media {
   display: flex;
   flex-flow: column wrap;

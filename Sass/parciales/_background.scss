@@ -3,20 +3,31 @@
 $height: 100vh;
 $widht: 100%;
 
-
+body{
+  background-color: black;
+}
 
 @each $fondo in home, servicios, portfolio, nosotros, contacto, error404{
-  .#{$fondo} { 
-      background-image:  linear-gradient(rgba(255, 255, 255, 1), rgba(44, 36, 36, 0.5)), url('../media/#{$fondo}.jpg');
-      background-repeat: no-repeat;
+ .#{$fondo} {
+      background-color: wheat;
+      background-repeat: repeat;
       background-position: center center;
       background-size: cover;
       min-height: 100vh;
+      width: 100%;
       display: flex;
       width: $widht;
       justify-content: center;
-      align-items:stretch;
-        };
+     
+     
+        }
+  .#{$fondo}:nth-child(1){
+    background-color: yellow;
+      animation: animate 4s ease-in-out infinite;
+          } 
+    
+
+    
   
       .bg__title{
           font-family: 'Quicksand', sans-serif;
@@ -35,4 +46,17 @@ $widht: 100%;
             width: 70%;
           }
         }
+
   }
+
+  @keyframes animate {
+    0%,100%{
+        clip-path: polygon(0% 61%, 14% 50%, 35% 58%, 55% 59%, 77% 52%, 89% 57%, 100% 64%, 100% 100%, 0% 100%);
+        color: #2b0404;     
+    }
+    50%{
+        clip-path: polygon(0% 61%, 18% 66%, 35% 56%, 51% 49%, 75% 64%, 87% 68%, 100% 59%, 100% 100%, 0% 100%);
+        color: #2b0404; 
+
+    }
+} 
