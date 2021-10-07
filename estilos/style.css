@@ -152,7 +152,7 @@ html {
   align-items: center; }
   .home h1, .error404 h1 {
     font-family: 'besley', serif;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 0%;
     font-size: 13rem; }
     @media screen and (max-width: 768px) {
