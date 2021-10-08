@@ -11,22 +11,23 @@
         @include tablet{
             font-size: 8rem;
         }
-        @include celular{
-            font-size: 4rem;
-        }
     }
 
     h3{
         font-weight: 300;
         font-size: 2.5rem;
-        font-family: 'Quicksand', sans-serif;
+        font-family: 'Montserrat Alternates', sans-serif;
+        margin-top: 6rem;
         @include tablet{
             font-size: 2rem;
+            margin-top: 4rem;
         }
         @include celular{
-            font-size: 1.5rem;
+            font-size: 2rem;
+            width: 80%;
+            margin-top: 8rem;
         }
-        }
+        } 
 }
 
 .error404{
@@ -42,40 +43,70 @@
     }
 }
 
-/* .efect_title{
-@include desktop{
+.efect_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     h1{
-       position: absolute;
-       transform: translate(-50%, -50%);
-       left: 50%;
-       top: 50%;
+       position:absolute;
     }
+   
     h1:nth-child(1){  
          color: transparent;
-         -webkit-text-stroke: 1.5px #000000;
+         -webkit-text-stroke: 1.5px #6b6b6b;
     }
     h1:nth-child(2){ 
-        
-        
+        animation: animate2 4s ease-in-out infinite;
     }
+    h1:nth-child(3){  
+        color: transparent;
+        -webkit-text-stroke: 1.5px #6b6b6b;
+        @include tablet{
+            -webkit-text-stroke: 1px #6b6b6b;
+        }
+   }
+   h1:nth-child(4){ 
+       animation: animate 4s ease-in-out infinite;
+   }
+   .desktop{
+        @include celular{
+            display: none;
+       }
+    
+    }
+    .cel{
+    display: none;
+    @include celular{
+        display: flex;
+        font-size: 20rem;
     }
 }
- */
-/* .home{
-    animation: animate 4s ease-in-out infinite;
-} */
-/* body{
-    background-color:transparent;
+    
 }
 
 @keyframes animate {
     0%,100%{
-        clip-path: polygon(0% 61%, 14% 50%, 35% 58%, 55% 59%, 77% 52%, 89% 57%, 100% 64%, 100% 100%, 0% 100%);
-        color: #2b0404;     
+        clip-path: polygon(0% 56%, 4% 53%, 9% 53%, 12% 58%, 16% 63%, 20% 61%, 24% 55%, 27% 50%, 31% 47%, 35% 48%, 37% 53%, 40% 61%, 43% 67%, 48% 65%, 52% 59%, 55% 53%, 59% 48%, 62% 46%, 65% 49%, 68% 54%, 71% 59%, 73% 64%, 76% 68%, 81% 69%, 85% 67%, 88% 61%, 92% 55%, 96% 49%, 100% 41%, 100% 100%, 0% 100%);
+        color: #6b6b6b;    
+       
     }
     50%{
-        clip-path: polygon(0% 61%, 18% 66%, 35% 56%, 51% 49%, 75% 64%, 87% 68%, 100% 59%, 100% 100%, 0% 100%);
-        color: #2b0404; 
-   
+        clip-path: polygon(0 41%, 3% 51%, 6% 62%, 9% 69%, 14% 69%, 18% 64%, 22% 57%, 26% 49%, 30% 43%, 36% 42%, 39% 44%, 43% 48%, 46% 53%, 49% 56%, 52% 61%, 56% 65%, 60% 69%, 64% 65%, 68% 61%, 70% 57%, 73% 52%, 75% 48%, 79% 43%, 83% 39%, 86% 36%, 90% 34%, 93% 34%, 96% 36%, 100% 41%, 100% 100%, 0% 100%);
+        color: #6b6b6b; 
+       
     }
-} */
+}
+
+@keyframes animate2 {
+    0%,100%{
+        clip-path: polygon(0% 56%, 5% 52%, 10% 48%, 16% 45%, 22% 43%, 30% 43%, 35% 45%, 39% 49%, 44% 52%, 50% 55%, 57% 53%, 62% 48%, 68% 44%, 74% 41%, 82% 40%, 88% 41%, 93% 44%, 97% 48%, 100% 51%, 100% 100%, 0% 100%);
+        color: #6b6b6b;    
+       
+    }
+    50%{
+        clip-path: polygon(0 39%, 4% 45%, 7% 50%, 12% 54%, 18% 56%, 26% 56%, 34% 52%, 40% 48%, 46% 44%, 52% 42%, 58% 38%, 65% 35%, 72% 35%, 78% 37%, 83% 41%, 88% 46%, 92% 50%, 97% 54%, 100% 57%, 100% 100%, 0% 100%);
+        color: #6b6b6b; 
+       
+    }
+}
