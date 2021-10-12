@@ -3,16 +3,22 @@
 $height: 100vh;
 $widht: 100%;
 
+.h5{
+  display: flex;
+  height: 5rem;
+}
+
 @each $prueba in bg_home, bg_servicios, bg_portfolio, bg_nosotros, bg_contacto, bg_error404{
   .#{$prueba}{
-    background-image:  linear-gradient(rgba(255, 255, 255, 1), rgba(44, 36, 36, 0.5)), url('../media/#{$prueba}.jpg');
+/*     background-image:  linear-gradient(rgba(255, 255, 255, 1), rgba(44, 36, 36, 0.5)), url('../media/#{$prueba}.jpg');
+ */   background-color: #edeeed;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      min-height: 150vh;
+      min-height: 100vh;
       width: 100%;
     }
-}
+} 
 
 @each $fondo in home, servicios, portfolio, nosotros, contacto, error404{
  .#{$fondo} {
@@ -42,5 +48,85 @@ $widht: 100%;
         }
 
   }
+
+  .drops{
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: -1;
+    top: 80%;
+    @include celular{
+      display: none;
+    }
+}
+
+.drop{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    width: 15vw;
+    height: 30vh;
+    background: transparent;
+    border-radius: 59% 41% 33% 67% / 47% 48% 52% 53%;
+    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.05),
+                15px 25px 10px rgba(0,0,0, 0.1),
+                15px 20px 20px rgba(0,0,0, 0.05),
+                inset -10px -10px 15px rgba(255,255,255, 0.9);
+    transition: 2s ease-in-out;
+    @include tablet{
+      width: 15vw;
+      height: 20vh;
+    }
+}
+
+.drop::before{
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    background: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 41% 59% 53% 47% / 50% 67% 33% 50% ;
+}
+
+.drop::after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 65px; 
+    background: #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 56% 44% 48% 52% / 65% 56% 44% 35%;
+}
+
+.drop:nth-child(2)
+{
+    transform: scale(0.4);
+    border-radius: 64% 36% 39% 61% / 37% 75% 25% 63% ;
+    transform-origin: top;
+    animation: drop 10s ease-in-out infinite;
+}
+
+
+.drop:nth-child(3)
+{
+    transform: scale(0.6) translate(-200px, 130px);
+    border-radius: 53% 47% 53% 47% / 50% 30% 70% 50%;
+}
+
+.drop:nth-child(4)
+{
+    transform: scale(0.8) translate(0px, -50px);
+    border-radius: 53% 47% 53% 47% / 50% 30% 70% 50%;
+}
+
+.drop:nth-child(5)
+{
+    transform: scale(1.2) translate(-20px, -200px);
+    border-radius: 53% 47% 53% 47% / 50% 30% 70% 50%;
+}
 
  

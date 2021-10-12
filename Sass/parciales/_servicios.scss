@@ -12,7 +12,6 @@
             font-weight: 200;
         }
         .serv__media__text {
-            display: none;
             color: transparent;
             padding: 1rem;
             margin: 1rem;
@@ -24,7 +23,7 @@
         }
 }
 
-.serv__media:hover{
+/* .serv__media:hover{
     background-image: linear-gradient(
         to bottom,
         transparent,
@@ -65,4 +64,4 @@
     100% {
         color: #000000;
     }
-}
+} */

@@ -50,6 +50,7 @@
     
     h1{
        position:absolute;
+       
     }
    
     h1:nth-child(1){  
@@ -81,8 +82,7 @@
         display: flex;
         font-size: 20rem;
     }
-}
-    
+        }  
 }
 
 @keyframes animate {
@@ -108,3 +108,4 @@
        
     }
 }
+
