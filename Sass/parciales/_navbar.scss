@@ -1,5 +1,6 @@
 .nav{
     .nav__li{
+       
         display: flex;
         height: 10vh;
         align-items: center;
@@ -15,5 +16,9 @@
 }
 
 .navbar-brand{
-    width: 8vw;
+   width: 8vw;
+   
+    @include celular{
+    width: 10vw;
   }
+}
