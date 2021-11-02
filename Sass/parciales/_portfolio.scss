@@ -48,8 +48,9 @@
                     
                     h3{
                         font-size: 2.5rem;
-                        @include celular{
-                            font-size: 1.5rem;
+                        padding: 0.5rem;
+                        @include tablet{
+                            font-size: 2rem;
                         }
                     }
                     h5{
@@ -57,14 +58,36 @@
                         font-size: 2rem;
                         width: 100%;
                         padding: 0rem 1rem 0rem 1rem;
-                        @include celular{
-                            font-size: 1rem;
+                        @include tablet{
+                            font-size: 1.5rem;
                         }
                     }
-            }
-    }
+            }    
     
-    .media__contenido:hover {
+}       
+        .nos__contenido{
+            @extend .media__contenido;
+            border-radius: 10%;
+            .nos__contenido__img{
+                @extend .media__contenido__img;
+                transform-origin: left;
+                img{
+                    object-fit: cover;
+                    border-radius: 10%;
+                }
+                
+            }
+            .nos__contenido__text{
+                @extend .media__contenido__text;
+                transform: rotateY(-90deg);
+                transform-origin: right;
+            }
+        }
+    
+
+
+
+        .media__contenido:hover {
         cursor: pointer;
         .media__contenido__text{
             opacity: 1;
@@ -73,7 +96,15 @@
         .media__contenido__img{
             opacity: 0;
             transform: rotateX(-90deg);
-        } 
+        }
+        .nos__contenido__text{
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+        .nos__contenido__img{
+            opacity: 0;
+            transform: rotateY(-90deg);
+        }
     } 
 
 
