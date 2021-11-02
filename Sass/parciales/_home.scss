@@ -1,7 +1,7 @@
 @import "./media-queries";
 
 .home{
-    justify-content: center;
+    height: 100vh;
     align-items: center;
     h1{
         font-family: 'besley', serif;
@@ -16,7 +16,7 @@
     h3{
         font-weight: 300;
         font-size: 2.5rem;
-        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'Quicksand', sans-serif;
         margin-top: 6rem;
         @include tablet{
             font-size: 2rem;

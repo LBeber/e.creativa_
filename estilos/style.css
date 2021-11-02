@@ -1,69 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500&display=swap");
 /* 
 font-family: 'Montserrat Alternates', sans-serif; */
-.h5 {
-  display: flex;
-  height: rem; }
-
 .bg_home {
-  background-color: #edeeed;
+  background-color: #ededed;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100%; }
+  background-size: cover; }
 
 .bg_servicios {
-  background-color: #edeeed;
+  background-color: #ededed;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100%; }
+  background-size: cover; }
 
 .bg_portfolio {
-  background-color: #edeeed;
+  background-color: #ededed;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100%; }
+  background-size: cover; }
 
 .bg_nosotros {
-  background-color: #edeeed;
+  background-color: #ededed;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100%; }
+  background-size: cover; }
 
 .bg_contacto {
-  background-color: #edeeed;
+  background-color: #ededed;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100%; }
+  background-size: cover; }
 
 .bg_error404 {
-  background-color: #edeeed;
+  background-color: #ededed;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100%; }
+  background-size: cover; }
 
 .home, .error404 {
-  height: 100vh;
-  width: 100%;
   display: flex;
-  width: 100%;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 100vh; }
+
+.titulos {
+  height: 15vh; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 3rem;
   align-self: center; }
   @media screen and (max-width: 768px) {
     .bg__title {
@@ -85,16 +70,17 @@ p {
     width: 70%; } }
 
 .servicios {
-  height: 100vh;
-  width: 100%;
   display: flex;
-  width: 100%;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 100vh; }
+
+.titulos {
+  height: 15vh; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 3rem;
   align-self: center; }
   @media screen and (max-width: 768px) {
     .bg__title {
@@ -116,16 +102,17 @@ p {
     width: 70%; } }
 
 .portfolio {
-  height: 100vh;
-  width: 100%;
   display: flex;
-  width: 100%;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 100vh; }
+
+.titulos {
+  height: 15vh; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 3rem;
   align-self: center; }
   @media screen and (max-width: 768px) {
     .bg__title {
@@ -147,16 +134,17 @@ p {
     width: 70%; } }
 
 .nosotros {
-  height: 100vh;
-  width: 100%;
   display: flex;
-  width: 100%;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 100vh; }
+
+.titulos {
+  height: 15vh; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 3rem;
   align-self: center; }
   @media screen and (max-width: 768px) {
     .bg__title {
@@ -178,16 +166,17 @@ p {
     width: 70%; } }
 
 .contacto {
-  height: 100vh;
-  width: 100%;
   display: flex;
-  width: 100%;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 100vh; }
+
+.titulos {
+  height: 15vh; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 3rem;
   align-self: center; }
   @media screen and (max-width: 768px) {
     .bg__title {
@@ -209,16 +198,17 @@ p {
     width: 70%; } }
 
 .error404 {
-  height: 100vh;
-  width: 100%;
   display: flex;
-  width: 100%;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 100vh; }
+
+.titulos {
+  height: 15vh; }
 
 .bg__title {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 3rem;
   align-self: center; }
   @media screen and (max-width: 768px) {
     .bg__title {
@@ -316,12 +306,21 @@ p {
   transform: scale(1.2) translate(-20px, -200px);
   border-radius: 53% 47% 53% 47% / 50% 30% 70% 50%; }
 
+.footer {
+  height: 20vh; }
+  .footer img {
+    width: 3rem;
+    margin: 0rem 2rem 0rem 2rem; }
+  .footer h6 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem; }
+
 html {
   font-size: 62.5%;
   width: 100%; }
 
 .home, .error404 {
-  justify-content: center;
+  height: 100vh;
   align-items: center; }
   .home h1, .error404 h1 {
     font-family: 'besley', serif;
@@ -334,7 +333,7 @@ html {
   .home h3, .error404 h3 {
     font-weight: 300;
     font-size: 2.5rem;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin-top: 6rem; }
     @media screen and (max-width: 768px) {
       .home h3, .error404 h3 {
@@ -462,58 +461,65 @@ html {
   100% {
     color: #000000; } }
 
-.media__portfolio {
+.media__contenido {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   margin: 2rem;
   background: rgba(255, 255, 255, 0.7);
-  background-size: 10%;
   padding: 0rem;
-  max-width: 300px; }
+  max-width: 200px;
+  height: auto; }
   @media screen and (max-width: 576px) {
-    .media__portfolio {
+    .media__contenido {
       margin: none; } }
-  .media__portfolio .media__portfolio__img {
+  .media__contenido .media__contenido__img {
     border-radius: 10%;
     width: 100%;
-    height: auto;
     height: auto;
     text-align: center;
     transform-origin: top;
     transform-style: preserve-3d;
     transition: all 0.5s ease-in-out; }
-    .media__portfolio .media__portfolio__img img {
+    .media__contenido .media__contenido__img img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-  .media__portfolio .media__portfolio__text {
+  .media__contenido .media__contenido__text {
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-self: center;
     opacity: 0;
     color: black;
     position: absolute;
     text-align: center;
-    align-items: center;
     font-family: 'Quicksand', sans-serif;
     transform: rotateX(-90deg);
     transform-origin: bottom;
     transform-style: preserve-3d;
     transition: all 0.5s ease-in-out; }
-    .media__portfolio .media__portfolio__text h3 {
+    .media__contenido .media__contenido__text h3 {
       font-size: 2.5rem; }
-    .media__portfolio .media__portfolio__text h5 {
+      @media screen and (max-width: 576px) {
+        .media__contenido .media__contenido__text h3 {
+          font-size: 1.5rem; } }
+    .media__contenido .media__contenido__text h5 {
       font-weight: 300;
       font-size: 2rem;
-      width: 80%; }
+      width: 100%;
+      padding: 0rem 1rem 0rem 1rem; }
+      @media screen and (max-width: 576px) {
+        .media__contenido .media__contenido__text h5 {
+          font-size: 1rem; } }
 
-.media__portfolio:hover {
+.media__contenido:hover {
   cursor: pointer; }
-  .media__portfolio:hover .media__portfolio__text {
+  .media__contenido:hover .media__contenido__text {
     opacity: 1;
     transform: rotateX(0deg); }
-  .media__portfolio:hover .media__portfolio__img {
+  .media__contenido:hover .media__contenido__img {
     opacity: 0;
     transform: rotateX(-90deg); }
 
